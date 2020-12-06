@@ -8,6 +8,7 @@
 </head>
 <body>
 <?php include('include/header.php'); ?>
+<?php include('include/splash.php'); ?>
 <div class="container" id="content-main">
     <h1>Hello World!</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid commodi ab id esse voluptatum facere veniam error amet dolor impedit perspiciatis eos pariatur sit, facilis quod, eaque ullam doloremque saepe.

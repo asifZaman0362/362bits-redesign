@@ -5,6 +5,8 @@
     --color-fg-primary: #171717;
     --color-fg-secondary: #ffffff;
     --color-bg-secondary:#171717;
+    --color-accent-primary: aqua;
+    --color-accent-secondary: aqua;
 }
 
 html, body {
@@ -21,6 +23,72 @@ body {
     flex-direction: column;
 }
 
+div.container#splash_container {
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg-secondary);
+    position: absolute;
+}
+
+#splash_branding_container {
+    text-align: center;
+    margin: 50pt;
+}
+
+#splash_branding_container img {
+    width: 180pt;
+    height: 180pt;
+}
+
+div.container#lines_container {
+    margin-top: 20pt;
+}
+
+.line hr {
+    border: 1px solid;
+    margin: 10pt 0;
+}
+
+.line #line1 {
+    border-color: #22ffff;
+    width: 90%;
+}
+
+.line #line2 {
+    border-color: #ec5353;
+    width: 65%;
+}
+
+.line #line3 {
+    border-color: #fade7b;
+    width: 45%;
+}
+
+#chevron {
+    text-align: center;
+}
+
+div.button {
+    transition: 0.5s ease-in-out;
+}
+
+div.button svg {
+    width: 26pt;
+    height: 26pt;
+    transition: transform 0.3s ease-in-out;
+    fill: var(--color-fg-secondary);
+}
+
+div.button svg:hover {
+    transform: scale(1.2);
+    /*filter: brightness(0) saturate(100) invert(85%) sepia(56%) 
+    saturate(1908%) hue-rotate(159deg) brightness(100%) contrast(96%);*/
+}
+
+div.button svg:hover path {
+    fill: var(--color-accent-secondary);
+}
+
 #content-main {
     flex-grow: 1;
     padding: calc(var(--padding-standard)*3);
@@ -33,6 +101,19 @@ body {
     background: var(--color-bg-secondary);
     position: sticky;
     top: 0;
+}
+
+#splash_nav #navbar ul {
+    padding: 0;
+    text-align: center;
+    margin: 70pt;
+}
+
+#splash_nav #navbar ul li a {
+    font-size: 22pt;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: calc(2*var(--margin-standard));
 }
 
 #navbar-container {
