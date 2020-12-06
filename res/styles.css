@@ -32,12 +32,20 @@ div.container#splash_container {
 
 #splash_branding_container {
     text-align: center;
-    margin: 50pt;
+    margin: 60pt 0 30pt;
 }
 
 #splash_branding_container img {
     width: 180pt;
     height: 180pt;
+}
+
+div.container#motto_container p {
+    text-align: center;
+    color: var(--color-fg-secondary);
+    font-family: "Satisfy";
+    font-size: 24pt;
+    margin: 20pt 0 40pt;
 }
 
 div.container#lines_container {
