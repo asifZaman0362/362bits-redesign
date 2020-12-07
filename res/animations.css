@@ -1,0 +1,31 @@
+.slide-in-left-element {
+    position: relative;
+    animation: slide-in-left 1s ease-in;
+}
+
+#line1 {
+    position: relative;
+    animation: slide-in-left 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+#line2 {
+    position: relative;
+    animation: slide-in-left 1s ease-in-out 0.1s;
+    animation-fill-mode: forwards;
+}
+
+#line3 {
+    position: relative;
+    animation: slide-in-left 1s ease-in-out 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-left {
+    from {
+        left: -100vw;
+    }
+    to {
+        left: 0;
+    }
+}

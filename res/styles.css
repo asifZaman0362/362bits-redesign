@@ -1,13 +1,7 @@
-:root {
-    --padding-standard: 10pt;
-    --margin-standard: 5pt;
-    --color-bg-primary: #ffffff;
-    --color-fg-primary: #171717;
-    --color-fg-secondary: #ffffff;
-    --color-bg-secondary:#171717;
-    --color-accent-primary: aqua;
-    --color-accent-secondary: aqua;
-}
+@import url('https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css');
+@import url('layouts.css');
+@import url('colors.css');
+@import url('animations.css');
 
 html, body {
     margin: 0;
@@ -23,9 +17,19 @@ body {
     flex-direction: column;
 }
 
+.scroll-locked {
+    overflow: hidden;
+}
+
+.collapsed {
+    transition: 1s ease-in-out;
+    height: 0 !important;
+    overflow: hidden;
+}
+
 div.container#splash_container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: var(--color-bg-secondary);
     position: absolute;
 }
@@ -55,6 +59,7 @@ div.container#lines_container {
 .line hr {
     border: 1px solid;
     margin: 10pt 0;
+    left: -100vw;
 }
 
 .line #line1 {
@@ -80,21 +85,31 @@ div.button {
     transition: 0.5s ease-in-out;
 }
 
-div.button svg {
-    width: 26pt;
-    height: 26pt;
+div.button {
     transition: transform 0.3s ease-in-out;
     fill: var(--color-fg-secondary);
 }
 
-div.button svg:hover {
-    transform: scale(1.2);
-    /*filter: brightness(0) saturate(100) invert(85%) sepia(56%) 
-    saturate(1908%) hue-rotate(159deg) brightness(100%) contrast(96%);*/
+div.button a {
+    display: inline-block;
+    color: var(--color-fg-secondary);
 }
 
-div.button svg:hover path {
-    fill: var(--color-accent-secondary);
+div.button a:visited {
+    color: var(--color-fg-secondary);
+}
+
+div.button a i {
+    font-size: 26pt;
+    color: var(--color-fg-secondary);
+    transition: 0.3s ease-in-out;
+}
+
+div.button i:hover {
+    transform: scale(1.2);
+    color: var(--color-accent-secondary);
+    /*filter: brightness(0) saturate(100) invert(85%) sepia(56%) 
+    saturate(1908%) hue-rotate(159deg) brightness(100%) contrast(96%);*/
 }
 
 #content-main {

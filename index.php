@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="res/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <title>Hello World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
+    <script src="scripts/pagehandler.js"></script>
+    <title>362bits</title>
 </head>
-<body>
+<body class="scroll-locked">
 <?php include('include/header.php'); ?>
 <?php include('include/splash.php'); ?>
 <div class="container" id="content-main">
