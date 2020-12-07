@@ -3,7 +3,7 @@ var isShrunk = false;
 var lastScroll = 0;
 
 
-window.addEventListener(onload, () => function() {document.body.style.overflow = "hidden";})
+window.addEventListener(onload, onPageLoad);
 
 function scrollDown() {
     if (isShrunk || isScrolling) return;
@@ -31,4 +31,9 @@ function scrollUp() {
 function resetScroll() {
     isScrolling = false;
     console.log("aint scroll no mo playa!");
+}
+
+function onPageLoad() {
+    document.body.style.overflow = "hidden";
+    scrollTo(0, 0);
 }
