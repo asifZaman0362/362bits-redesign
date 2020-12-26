@@ -30,7 +30,6 @@ function scrollUp() {
 
 function resetScroll() {
     isScrolling = false;
-    console.log("aint scroll no mo playa!");
 }
 
 function onPageLoad() {
